@@ -1,0 +1,124 @@
+::after,
+::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  color-scheme: light dark;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  background-color: hsl(217, 54%, 11%);
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+span {
+  display: block;
+}
+
+p {
+  font-size: 18px;
+}
+/* start pack */
+section {
+  max-height: 700px;
+  display: grid;
+  grid-template-rows: auto 1fr auto 1fr;
+  padding: 1.4em;
+  width: 90%;
+  grid-template-columns: minmax(auto, 500px);
+  min-height: 650px;
+  max-width: 600px;
+  margin-inline: auto;
+  border-radius: 20px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(216, 50%, 16%);
+}
+section > figure:nth-child(1) > figcaption > p,
+section > figure:nth-child(4) > figcaption > span,
+hr {
+  opacity: 0.6;
+}
+/* section one */
+section > figure:nth-child(1) > div > img {
+  transition: 500ms;
+  border-radius: 8px;
+  cursor: pointer;
+  aspect-ratio: 1/1;
+}
+section > figure:nth-child(1) > figcaption > h2 {
+  padding: 1em 0;
+}
+/* section two */
+section > div {
+  padding: 1em 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section > div > p {
+  display: flex;
+  gap: 0.5em;
+}
+section > div > p:nth-child(1) {
+  color: hsl(178, 100%, 50%);
+}
+section > div > p:nth-child(2) {
+  color: hsl(215, 51%, 70%);
+}
+
+hr {
+  height: 2px;
+  min-width: 95%;
+  margin-inline: auto;
+  color: hsl(215, 32%, 27%);
+}
+/* section three */
+section > figure:nth-child(4) {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 9fr;
+}
+section > figure:nth-child(4) > img {
+  border: 2px solid white;
+  border-radius: 50%;
+}
+section > figure:nth-child(4) > figcaption {
+  display: flex;
+  padding: 0 1em;
+  gap: 0.5em;
+}
+
+/* hover */
+a {
+  transition: 500ms;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+section > figure:nth-child(1) > div {
+  background-image: url(images/icon-view.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px;
+}
+section > figure:nth-child(1) > div:hover {
+  background-color: hsl(178, 100%, 50%);
+}
+section > figure:nth-child(1) > div > img:hover {
+  opacity: 0.4;
+}
+section > figure:nth-child(4) > figcaption > a:hover,
+section > figure:nth-child(1) > figcaption > h2:hover {
+  color: hsl(178, 100%, 50%);
+}
