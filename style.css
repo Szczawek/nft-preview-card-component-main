@@ -107,7 +107,7 @@ a {
 }
 
 section > figure:nth-child(1) > div {
-  background-image: url(images/icon-view.svg);
+  background-image: url(icon-view.svg);
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 8px;
